@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: 1 ease;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: url("https://images.pexels.com/photos/4667030/pexels-photo-4667030.jpeg");
+    background-size: cover;
+    
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.header {
+    height: 200px;
+    background: rgba(0, 0, 0, 0.612);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.nav-menu {
+    list-style: none;
+    font-size: 30px;
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu>li {
+    cursor: pointer;
+    
+}
+
+.nav-menu>li>a:hover {
+    color: #D6AA42;
+    border-bottom: 3px solid #D6AA42;
+    transition: 0.2s ease;
+}
+
+.content {
+    min-height: 600px;
+    width: 650px;
+    max-width: 100%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+    border-radius: 8px;
+    font-size: 25px;
+    padding: 60px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 10px;
+    padding-top: 60px;
+}
+
+.content>* {
+    animation: 0.5s linear fadein;
+}
+
+.content-img {
+    height: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: url("https://www.rrstar.com/gcdn/presto/2023/01/13/NRRS/87e5ea0c-c552-43a0-852e-5f3f5e95781c-RFD0113_Top_Bartender006.JPG");
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+}
+
+
+.menu-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    
+}
+
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.63);;
+    padding: 20px;
+    flex: 1;
+    font-size: 13px;
+    height: 300px;
+    border-radius: 8px;
+    text-align: center;
+
+    
+    
+}
+
+.item-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border: none;
+    transition: 0.5s ease;
+
+}
+
+.item-img:hover {
+    transform: scale(1.20);
+    transition: 0.5s ease;
+}
+
+.item-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
